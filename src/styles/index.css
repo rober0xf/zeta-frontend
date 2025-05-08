@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+/* Navbar components */
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.15rem;
+  width: 100%;
+  background-color: #FF561E;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+}
