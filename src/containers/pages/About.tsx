@@ -1,18 +1,15 @@
 import Footer from "../../components/Footer";
-import HomeHeader from "../../components/HomeHeader";
 import Navbar from "../../components/Navbar";
 import Layout from "../../hocs/layouts/Layout";
 
-function Home() {
+function About() {
   return (
     <Layout>
       <Navbar />
-      <div className="pt-28">
-        <HomeHeader />
-      </div>
+      <h1 className="flex-1 ml-1">Know more about us</h1>
       <Footer />
     </Layout>
   );
 }
 
-export default Home;
+export default About;
