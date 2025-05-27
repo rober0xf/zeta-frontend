@@ -10,6 +10,7 @@ export class CategoriesClass {
     this.href = "";
   }
 }
+
 export class AuthorClass {
   name: string;
   href: string;
@@ -21,6 +22,7 @@ export class AuthorClass {
     this.imageUrl = "";
   }
 }
+
 export interface Post {
   Title: string;
   href: string;

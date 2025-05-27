@@ -5,10 +5,10 @@ function HomeHeader() {
   return (
     <main>
       <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-30 sm:pb-40">
+        <div className="mx-auto max-w-full xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48  pt-24 pb-12">
           <div>
             <div>
-              <h1 className="text-2xl font-bold tracking-tight sm:text-center sm:text-5xl">
+              <h1 className="text-2xl font-semibold tracking-tight  sm:text-5xl pb-12">
                 The best models for <span> </span>
                 <div
                   className="inline-flex"
@@ -23,7 +23,7 @@ function HomeHeader() {
                   ></Typewriter>
                 </div>
               </h1>
-              <ul className="flex gap-8 py-12 items-centeri justify-center">
+              <ul className="flex gap-8">
                 <li className="inline-flex border-b-2 border-transparent hover-underline relative ease-in-out mx-4">
                   <Link
                     to={"/models"}
@@ -66,26 +66,7 @@ function HomeHeader() {
                 </li>
               </ul>
               <p></p>
-              <div className="mt-8 flex gap-x-4 sm:justify-center">
-                <a
-                  href="#"
-                  className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
-                >
-                  Get started
-                  <span className="text-indigo-200" aria-hidden="true">
-                    &rarr;
-                  </span>
-                </a>
-                <a
-                  href="#"
-                  className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-                >
-                  Live demo
-                  <span className="text-gray-400" aria-hidden="true">
-                    &rarr;
-                  </span>
-                </a>
-              </div>
+              <div className="mt-8 flex gap-x-4 sm:justify-center"></div>
             </div>
             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
               <svg
