@@ -7,8 +7,12 @@ import HomeHeader from "../../components/home/HomeHeader";
 import Incentives from "../../components/home/Incentives";
 import Navbar from "../../components/Navbar";
 import Layout from "../../hocs/layouts/Layout";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout>
       <Navbar />

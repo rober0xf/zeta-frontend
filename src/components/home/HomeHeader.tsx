@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import Typewriter from "typewriter-effect";
+import nn from "../../assets/nn.png"
 
 function HomeHeader() {
   return (
@@ -9,7 +10,7 @@ function HomeHeader() {
           <div>
             <div>
               <h1 className="text-2xl font-semibold tracking-tight  sm:text-5xl pb-12">
-                The best models for <span> </span>
+                About us
                 <div
                   className="inline-flex"
                   style={{ color: "#ff561e", fontWeight: "bold" }}
@@ -94,6 +95,9 @@ function HomeHeader() {
                   </linearGradient>
                 </defs>
               </svg>
+            </div>
+            <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden bg-white blur-lg sm:top-[calc(100%-40rem)]">
+              <img src={nn} className="w-full h-full object-cover"></img>
             </div>
           </div>
         </div>

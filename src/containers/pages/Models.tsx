@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Layout from "../../hocs/layouts/Layout";
 
 function Models() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout>
       <Navbar />
