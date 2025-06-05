@@ -31,9 +31,9 @@ const incentives: IncentivesInterface[] = [
 function Incentives() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
-        <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
-          <div className="max-w-3xl">
+      <div className="py-24 sm:px-2 sm:py-32 lg:px-4">
+        <div className="mx-auto max-w-2xl px-4 lg:max-w-none flex flex-col items-center">
+          <div className="max-w-3xl text-center">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900">
               We built our business on customer service
             </h2>
@@ -45,10 +45,10 @@ function Incentives() {
               don't actually read it.
             </p>
           </div>
-          <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
+          <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3 w-full justify-items-center">
             {incentives.map((incentive) => (
-              <div key={incentive.Name} className="sm:flex lg:block">
-                <div className="sm:flex-shrink-0">
+              <div key={incentive.Name} className="sm:flex lg:block text-center lg:text-left">
+                <div className="sm:flex-shrink-0 flex justify-center lg:justify-start">
                   <img className="h-16 w-16" src={incentive.ImageSrc} alt="" />
                 </div>
                 <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
